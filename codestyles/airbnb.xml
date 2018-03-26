@@ -5,7 +5,6 @@
       <option name="TAB_SIZE" value="2" />
     </value>
   </option>
-  <option name="RIGHT_MARGIN" value="100" />
   <option name="HTML_SPACE_INSIDE_EMPTY_TAG" value="true" />
   <option name="HTML_DO_NOT_INDENT_CHILDREN_OF" value="html,thead,tbody,tfoot" />
   <HTMLCodeStyleSettings>
@@ -52,7 +51,6 @@
     </indentOptions>
   </codeStyleSettings>
   <codeStyleSettings language="JavaScript">
-    <option name="RIGHT_MARGIN" value="100" />
     <option name="KEEP_BLANK_LINES_IN_CODE" value="1" />
     <option name="ALIGN_MULTILINE_PARAMETERS" value="false" />
     <option name="ALIGN_MULTILINE_TERNARY_OPERATION" value="true" />
