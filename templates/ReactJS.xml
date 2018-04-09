@@ -4,7 +4,7 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="ren" value="render() {&#10;    return (&#10;        $END$&#10;    )&#10;}" description="render function" toReformat="true" toShortenFQNames="true">
+  <template name="ren" value="render() {&#10;  return (&#10;    $END$&#10;  )&#10;}" description="render function" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
