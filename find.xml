@@ -1,7 +1,9 @@
 <application>
   <component name="FindSettings">
-    <option name="customScope" value="api" />
-    <option name="defaultScopeName" value="api" />
-    <option name="SEARCH_SCOPE" value="api" />
+    <option name="caseSensitive" value="true" />
+    <option name="customScope" value="school" />
+    <option name="defaultScopeName" value="school" />
+    <option name="CASE_SENSITIVE_SEARCH" value="true" />
+    <option name="SEARCH_SCOPE" value="school" />
   </component>
 </application>
