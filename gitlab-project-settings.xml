@@ -1,12 +1,12 @@
 <application>
   <component name="SettingsState">
     <option name="host" value="https://git.ddoperation.com" />
-    <option name="token" value="EgHgA9ZVavDsWQx8QpGT" />
+    <option name="token" value="" />
     <option name="servers">
       <list>
         <ServerDto>
-          <option name="host" value="https://git.ddoperation.com/" />
-          <option name="token" value="EgHgA9ZVavDsWQx8QpGT" />
+          <option name="host" value="https://git.ddoperation.com" />
+          <option name="token" value="QyzDuwZrssatfn3kyTs9" />
         </ServerDto>
       </list>
     </option>
