@@ -12,6 +12,14 @@
       <CLASSES />
       <SOURCES />
     </library>
+    <library name="@types/mongodb" type="javaScript">
+      <CLASSES />
+      <SOURCES />
+    </library>
+    <library name="@types/mongoose" type="javaScript">
+      <CLASSES />
+      <SOURCES />
+    </library>
     <library name="@types/next" type="javaScript">
       <CLASSES />
       <SOURCES />
