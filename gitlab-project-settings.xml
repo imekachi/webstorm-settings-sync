@@ -5,6 +5,18 @@
     <option name="projects">
       <list>
         <ProjectDto>
+          <option name="httpUrl" value="https://git.ddoperation.com/poc/beanstalkd.git" />
+          <option name="name" value="beanstalkd" />
+          <option name="namespace" value="poc" />
+          <option name="sshUrl" value="git@git.ddoperation.com:poc/beanstalkd.git" />
+        </ProjectDto>
+        <ProjectDto>
+          <option name="httpUrl" value="https://git.ddoperation.com/poc/rabbitmq.git" />
+          <option name="name" value="rabbitmq" />
+          <option name="namespace" value="poc" />
+          <option name="sshUrl" value="git@git.ddoperation.com:poc/rabbitmq.git" />
+        </ProjectDto>
+        <ProjectDto>
           <option name="httpUrl" value="https://git.ddoperation.com/service/bombom.git" />
           <option name="name" value="bombom" />
           <option name="namespace" value="service" />
