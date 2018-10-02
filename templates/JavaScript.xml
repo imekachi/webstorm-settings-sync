@@ -4,12 +4,14 @@
     <variable name="VAR_COPY" expression="VAR" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
     </context>
   </template>
   <template name="ct" value="console.log(`&gt;&gt; $TEXT$`)$END$" description="console.log('&gt;&gt; TEXT')" toReformat="true" toShortenFQNames="true">
     <variable name="TEXT" expression="jsSuggestVariableName()" defaultValue="text" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
     </context>
   </template>
   <template name="im" value="import $PACKAGE$ from '$PATH$'" description="import ... from '...'" toReformat="true" toShortenFQNames="true">
@@ -20,7 +22,7 @@
       <option name="JSX_HTML" value="false" />
     </context>
   </template>
-  <template name="&gt;" value="($START$) =&gt; $END$" description="arrow function" toReformat="true" toShortenFQNames="true">
+  <template name="=&gt;" value="($START$) =&gt; $END$" description="arrow function" toReformat="true" toShortenFQNames="true">
     <variable name="START" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
@@ -63,6 +65,7 @@
     <variable name="TEXT" expression="jsSuggestVariableName()" defaultValue="text" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
     </context>
   </template>
   <template name="cw" value="console.warn('&gt;&gt; $VAR_COPY$: ', $VAR$)$END$" description="console.warn( &gt;&gt; varName: varValue)" toReformat="true" toShortenFQNames="true">
@@ -70,6 +73,21 @@
     <variable name="VAR_COPY" expression="VAR" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+    </context>
+  </template>
+  <template name="ce" value="console.error(`&gt;&gt; $VAR_COPY$: `, $VAR$)$END$" description="console.error( &gt;&gt; varName: varValue)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="jsSuggestVariableName()" defaultValue="obj" alwaysStopAt="true" />
+    <variable name="VAR_COPY" expression="VAR" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+    </context>
+  </template>
+  <template name="tc" value="try {&#10;  $END$&#10;} catch (error) {&#10;  console.error(`&gt;&gt; error:`, error)&#10;}" description="try catch" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
     </context>
   </template>
 </templateSet>
