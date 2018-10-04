@@ -90,4 +90,17 @@
       <option name="JSX_HTML" value="false" />
     </context>
   </template>
+  <template name="tdd" value="describe(`$FUNCTION_NAME$() - $FUNCTION_PATH$`, () =&gt; {&#10;  const specs = [&#10;    {&#10;      input: [$PARAMS$],&#10;      result: $RESULT$,&#10;    },$END$&#10;  ]&#10;&#10;  specs.forEach(({ input, result }) =&gt; {&#10;    it(`should return ${JSON.stringify(result)} when passing ${JSON.stringify(input)}`, () =&gt; {&#10;      expect($FUNCTION_NAME_COPY$(...input)).toEqual(result)&#10;    })&#10;  })&#10;})&#10;" description="TDD template" toReformat="true" toShortenFQNames="true">
+    <variable name="FUNCTION_NAME" expression="jsSuggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="FUNCTION_PATH" expression="jsSuggestVariableName()" defaultValue="utils/xxx" alwaysStopAt="true" />
+    <variable name="PARAMS" expression="jsArrayVariable()" defaultValue="" alwaysStopAt="true" />
+    <variable name="RESULT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FUNCTION_NAME_COPY" expression="FUNCTION_NAME" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_CLASS" value="false" />
+      <option name="JS_EXPRESSION" value="false" />
+    </context>
+  </template>
 </templateSet>
