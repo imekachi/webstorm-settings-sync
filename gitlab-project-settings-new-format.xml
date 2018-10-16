@@ -1,0 +1,15 @@
+<application>
+  <component name="SettingsState">
+    <option name="gitlabServers">
+      <list>
+        <GitlabServer>
+          <option name="apiToken" value="UuyajsZbjUUyx6k3R6Mq" />
+          <option name="apiUrl" value="https://git.ddoperation.com" />
+          <option name="preferredConnection" value="HTTPS" />
+          <option name="removeSourceBranch" value="false" />
+          <option name="repositoryUrl" value="git.ddoperation.com" />
+        </GitlabServer>
+      </list>
+    </option>
+  </component>
+</application>
