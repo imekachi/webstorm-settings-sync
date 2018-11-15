@@ -15,21 +15,19 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="rcfn" value="const $COMPONENT$ = $PROPS$ =&gt; (&#10;    $END$&#10;)&#10;&#10;export default $COMPONENT$" description="Function - React component" toReformat="true" toShortenFQNames="true">
+  <template name="rcfn" value="function $COMPONENT$(props) =&gt; {&#10;  return (&#10;    $END$&#10;  )&#10;}&#10;&#10;export default $COMPONENT$" description="Function - React component" toReformat="true" toShortenFQNames="true">
     <variable name="COMPONENT" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
-    <variable name="PROPS" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="cns" value="constructor() {&#10;    super()&#10;    $END$&#10;}" description="constructor" toReformat="true" toShortenFQNames="true">
+  <template name="cns" value="constructor(props) {&#10;    super(props)&#10;    $END$&#10;}" description="constructor" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="rcdm" value="const $COMPONENT$ = $PROPS$ =&gt; (&#10;    $END$&#10;)&#10;&#10;export default $COMPONENT$" description="Function - React component" toReformat="true" toShortenFQNames="true">
+  <template name="rcdm" value="function $COMPONENT$(props) =&gt; {&#10;  return (&#10;    $END$&#10;  )&#10;}&#10;&#10;export default $COMPONENT$" description="Function - React component" toReformat="true" toShortenFQNames="true">
     <variable name="COMPONENT" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
-    <variable name="PROPS" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
@@ -52,7 +50,7 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="rcst" value="import styled from 'styled-components'&#10;&#10;export const styles = {}&#10;&#10;const Wrapper = styled.div``&#10;&#10;const $COMPONENT$ = props =&gt; {&#10;  return (&#10;    &lt;Wrapper&gt;&#10;      $END$&#10;    &lt;/Wrapper&gt;&#10;  )&#10;}&#10;&#10;export default $COMPONENT$" description="component with styled-components" toReformat="true" toShortenFQNames="true">
+  <template name="rcst" value="import styled from 'styled-components'&#10;&#10;export const styles = {}&#10;&#10;const Wrapper = styled.div``&#10;&#10;function $COMPONENT$(props) {&#10;  return (&#10;    &lt;Wrapper&gt;&#10;      $END$&#10;    &lt;/Wrapper&gt;&#10;  )&#10;}&#10;&#10;export default $COMPONENT$" description="component with styled-components" toReformat="true" toShortenFQNames="true">
     <variable name="COMPONENT" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
@@ -76,7 +74,7 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="imcom" value="import { compose } from 'recompose'$END$" description="import { compose } from 'recompose'" toReformat="false" toShortenFQNames="true">
+  <template name="imcom" value="import { compose } from 'school/utils/compose'$END$" description="import { compose } from 'recompose'" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="JSX_HTML" value="false" />
