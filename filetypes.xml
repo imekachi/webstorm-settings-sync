@@ -4,6 +4,7 @@
       <mapping ext="zsh" type="Bash" />
       <mapping ext="gql" type="GraphQL Schema" />
       <mapping pattern=".gitignore_global" type="PLAIN_TEXT" />
+      <removed_mapping ext="gql" approved="true" type="GraphQL Schema" />
     </extensionMap>
   </component>
 </application>
