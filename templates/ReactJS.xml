@@ -74,7 +74,7 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="imcom" value="import { compose } from 'school/utils/compose'$END$" description="import { compose } from 'recompose'" toReformat="false" toShortenFQNames="true">
+  <template name="imcom" value="import compose from 'school/utils/compose'$END$" description="import compose from 'school/utils/compose'" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="JSX_HTML" value="false" />
