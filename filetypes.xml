@@ -2,8 +2,11 @@
   <component name="FileTypeManager" version="17">
     <extensionMap>
       <mapping ext="zsh" type="Bash" />
+      <removed_mapping ext="graphql" approved="true" type="GraphQL" />
       <mapping ext="gql" type="GraphQL Schema" />
+      <mapping ext="graphql" type="GraphQL Schema" />
       <mapping pattern=".gitignore_global" type="PLAIN_TEXT" />
+      <removed_mapping ext="graphql" approved="true" type="GraphQL" />
       <removed_mapping ext="gql" approved="true" type="GraphQL Schema" />
       <removed_mapping pattern="*gql" approved="true" type="GraphQL Schema" />
     </extensionMap>
