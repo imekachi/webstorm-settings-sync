@@ -1,5 +1,5 @@
 <templateSet group="GraphQL">
-  <template name="imgr" value="import gql from 'graphql-tag'&#10;import { graphql } from 'react-apollo'" description="import gql and graphql" toReformat="true" toShortenFQNames="true">
+  <template name="imql" value="import gql from 'graphql-tag'&#10;import { graphql } from 'react-apollo'" description="import gql and graphql" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
