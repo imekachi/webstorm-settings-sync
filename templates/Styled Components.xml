@@ -1,5 +1,5 @@
 <templateSet group="Styled Components">
-  <template name="respmo" value="// responsive&#10;${mediaBreakpoints.mobile.down(css`&#10;  $END$&#10;`)};" description="responsive mobile down" toReformat="true" toShortenFQNames="true">
+  <template name="respmo" value="// responsive&#10;${mediaBreakpoints.mobile.down`&#10;  $END$&#10;`};" description="responsive mobile down" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="CSS" value="false" />
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
