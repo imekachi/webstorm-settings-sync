@@ -109,4 +109,12 @@
       <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="ctb" value="console.group(`&gt; $VAR_COPY$: `)&#10;console.table($VAR$)$END$&#10;console.groupEnd()" description="console.table( &gt; varName, varValue)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="jsSuggestVariableName()" defaultValue="obj" alwaysStopAt="true" />
+    <variable name="VAR_COPY" expression="VAR" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+    </context>
+  </template>
 </templateSet>
