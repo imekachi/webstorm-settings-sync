@@ -117,4 +117,10 @@
       <option name="JSX_HTML" value="false" />
     </context>
   </template>
+  <template name="imprcl" value="import printCL from 'school/utils/printCL'" description="import printCL" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
