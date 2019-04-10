@@ -3,6 +3,7 @@
     <extensionMap>
       <mapping ext="zsh" type="Bash" />
       <mapping pattern=".gitignore_global" type="Git file" />
+      <mapping ext="gql" type="GraphQL" />
       <removed_mapping ext="htaccess" approved="true" type="PLAIN_TEXT" />
       <removed_mapping pattern=".yarnrc" approved="true" type="PLAIN_TEXT" />
       <mapping ext="conf" type="nginx file type" />
