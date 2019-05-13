@@ -181,7 +181,7 @@
     <option name="gitlabServers">
       <list>
         <GitlabServer>
-          <option name="apiToken" value="UuyajsZbjUUyx6k3R6Mq" />
+          <option name="apiToken" value="ead_un5Xc9HySU85Un-7" />
           <option name="apiUrl" value="https://git.ddoperation.com" />
           <option name="preferredConnection" value="HTTPS" />
           <option name="removeSourceBranch" value="false" />
