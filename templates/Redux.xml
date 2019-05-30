@@ -1,0 +1,30 @@
+<templateSet group="Redux">
+  <template name="imcon" value="import { connect } from 'react-redux'$END$" description="import redux connect" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+    </context>
+  </template>
+  <template name="rdc" value="export default function $COMPONENT$(state = initialState, action) {&#10;&#10;  switch (action.type) {&#10;&#10;    case types.$ACTION_TYPES$: {&#10;      return { ...state, $END$ }&#10;    }&#10;&#10;    default: {&#10;      return state&#10;    }&#10;  }&#10;}" description="Redux Reducer" toReformat="true" toShortenFQNames="true">
+    <variable name="COMPONENT" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <variable name="ACTION_TYPES" expression="capitalizeAndUnderscore(String)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rdcon" value="const mapStateToProps = (state) =&gt; ({&#10;  $END$&#10;})&#10;&#10;const mapDispatchToProps = (dispatch) =&gt; ({&#10;  &#10;})&#10;&#10;export default connect(mapStateToProps, mapDispatchToProps)($COMPONENT$Component)" description="Redux Container template" toReformat="false" toShortenFQNames="true">
+    <variable name="COMPONENT" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+    </context>
+  </template>
+  <template name="rdca" value="// TYPES&#10;export const types = {&#10;  $ACTION_TYPES$: '$TYPE_PREFIX$/$ACTION_TYPES$'&#10;}&#10;&#10;export const initialState = {}&#10;&#10;// REDUCER&#10;export default function $COMPONENT$(state = initialState, action) {&#10;&#10;  switch (action.type) {&#10;&#10;    case types.$ACTION_TYPES$: {&#10;      return { ...state, $END$ }&#10;    }&#10;&#10;    default: {&#10;      return state&#10;    }&#10;  }&#10;}&#10;&#10;// ACTION CREATORS&#10;export const actions = {}" description="Redux Reducer (All)" toReformat="true" toShortenFQNames="true">
+    <variable name="ACTION_TYPES" expression="capitalizeAndUnderscore(String)" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE_PREFIX" expression="capitalizeAndUnderscore(fileNameWithoutExtension())" defaultValue="" alwaysStopAt="true" />
+    <variable name="COMPONENT" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>
