@@ -1,12 +1,12 @@
 <templateSet group="JavaScript">
-  <template name="cl" value="console.log('&gt;&gt; $VAR_COPY$: ', $VAR$)$END$" description="console.log( &gt;&gt; varName: varValue)" toReformat="true" toShortenFQNames="true">
+  <template name="cl" value="console.log('&gt; $VAR_COPY$: ', $VAR$)$END$" description="console.log( &gt;&gt; varName: varValue)" toReformat="true" toShortenFQNames="true">
     <variable name="VAR" expression="jsSuggestVariableName()" defaultValue="obj" alwaysStopAt="true" />
     <variable name="VAR_COPY" expression="VAR" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="ct" value="console.log('&gt;&gt; $TEXT$')$END$" description="console.log('&gt;&gt; TEXT')" toReformat="true" toShortenFQNames="true">
+  <template name="ct" value="console.log('&gt; $TEXT$')$END$" description="console.log('&gt;&gt; TEXT')" toReformat="true" toShortenFQNames="true">
     <variable name="TEXT" expression="jsSuggestVariableName()" defaultValue="text" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
@@ -20,12 +20,6 @@
       <option name="JSX_HTML" value="false" />
     </context>
   </template>
-  <template name="&gt;" value="($START$) =&gt; $END$" description="arrow function" toReformat="true" toShortenFQNames="true">
-    <variable name="START" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="JAVA_SCRIPT" value="true" />
-    </context>
-  </template>
   <template name="imp" value="import $PACKAGE$ from '$PATH$'" description="import ... from '...'" toReformat="true" toShortenFQNames="true">
     <variable name="PATH" expression="" defaultValue="./" alwaysStopAt="true" />
     <variable name="PACKAGE" expression="jsSuggestVariableName()" defaultValue="{  }" alwaysStopAt="true" />
@@ -34,7 +28,7 @@
       <option name="JSX_HTML" value="false" />
     </context>
   </template>
-  <template name="cg" value="console.group('&gt;&gt; $VAR$')$END$" description="console.group()" toReformat="false" toShortenFQNames="true">
+  <template name="cg" value="console.group('&gt; $VAR$')$END$" description="console.group()" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="capitalizeAndUnderscore(String)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
@@ -57,6 +51,20 @@
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="JSX_HTML" value="false" />
+    </context>
+  </template>
+  <template name="imcrl" value="import colorLog from 'shared/utils/colorLog'" description="import colorLog" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_CLASS" value="false" />
+    </context>
+  </template>
+  <template name="imprcl" value="import printCL from 'school/utils/printCL'" description="import printCL" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_CLASS" value="false" />
     </context>
   </template>
 </templateSet>
